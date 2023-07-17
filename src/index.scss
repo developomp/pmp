@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body,
+#root {
+    @apply h-screen flex-wrap break-words bg-zinc-700 text-zinc-200;
+}
