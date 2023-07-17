@@ -20,6 +20,12 @@
    pnpm install
    ```
 
+## Developing Frontend
+
+```
+pnpm dev
+```
+
 ## Developing Desktop App
 
 ```
@@ -33,6 +39,16 @@ pnpm tauri dev
 
    ```
    pnpm tauri android dev
+   ```
+
+## Updating Icons
+
+1. Update [app-icon.png](./app-icon.png)
+2. Delete `src-tauri/gen`
+3. Run the following command
+
+   ```
+   pnpm tauri icon
    ```
 
 ## Learning Material
