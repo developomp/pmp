@@ -20,9 +20,12 @@ module.exports = {
         browser: true,
         es2021: true,
     },
-    plugins: ["@typescript-eslint", "prettier"],
+    plugins: ["@typescript-eslint", "prettier", "simple-import-sort"],
     rules: {
         "prettier/prettier": "error",
+
+        "simple-import-sort/imports": "error",
+        "simple-import-sort/exports": "error",
     },
     ignorePatterns: ["node_modules"],
 }

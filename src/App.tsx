@@ -1,6 +1,6 @@
+import { Route, Routes } from "@solidjs/router"
 import { type Component } from "solid-js"
 
-import { Route, Routes } from "@solidjs/router"
 import Home from "./pages/Home"
 
 const App: Component = () => {

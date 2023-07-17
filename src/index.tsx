@@ -1,11 +1,11 @@
 /* @refresh reload */
+import "./index.scss"
+import "./styles/heading.scss"
+
+import { Router } from "@solidjs/router"
 import { render } from "solid-js/web"
 
 import App from "./App"
-import { Router } from "@solidjs/router"
-
-import "./index.scss"
-import "./styles/heading.scss"
 
 render(
     () => (

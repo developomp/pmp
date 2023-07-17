@@ -1,6 +1,7 @@
-import { Component, Suspense, createResource } from "solid-js"
-import logo from "@/assets/logo.svg"
 import { invoke } from "@tauri-apps/api"
+import { Component, createResource, Suspense } from "solid-js"
+
+import logo from "@/assets/logo.svg"
 
 async function greet(name: string): Promise<string> {
     return await invoke("greet", { name })

@@ -20,5 +20,9 @@
     ],
 
     // prevent @tailwind directive from showing errors
-    "scss.lint.unknownAtRules": "ignore"
+    "scss.lint.unknownAtRules": "ignore",
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
 }
