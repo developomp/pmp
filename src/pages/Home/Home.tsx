@@ -1,11 +1,13 @@
-import { Component, Suspense, createSignal } from "solid-js"
+import { Component, Suspense, createResource } from "solid-js"
 import logo from "@/assets/logo.svg"
 import { invoke } from "@tauri-apps/api"
 
-const Home: Component = () => {
-    const [greetMsg, setGreetMsg] = createSignal("")
+async function greet(name: string): Promise<string> {
+    return await invoke("greet", { name })
+}
 
-    invoke("greet", { name: "pomp" }).then(msg => setGreetMsg(msg as string))
+const Home: Component = () => {
+    const [name] = createResource("pomp", greet)
 
     return (
         <>
@@ -14,7 +16,7 @@ const Home: Component = () => {
             <input type="range" min="0" max="50" value="10" step="1" />
 
             <Suspense fallback={<p>Loading...</p>}>
-                <p>{greetMsg()}</p>
+                <p>{name()}</p>
             </Suspense>
         </>
     )
