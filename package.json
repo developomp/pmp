@@ -9,6 +9,7 @@
         "tauri": "tauri"
     },
     "dependencies": {
+        "@solidjs/router": "^0.8.2",
         "@tauri-apps/api": "^2.0.0-alpha.4",
         "@tauri-apps/plugin-shell": "^2.0.0-alpha.0",
         "@tauri-apps/plugin-window": "^2.0.0-alpha.0",

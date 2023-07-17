@@ -13,6 +13,7 @@
         "libwebkit",
         "patchelf",
         "pompy",
+        "solidjs",
         "Swatinem",
         "tailwindcss",
         "tauri"
