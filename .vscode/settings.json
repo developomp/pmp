@@ -20,5 +20,5 @@
     ],
 
     // prevent @tailwind directive from showing errors
-    "css.lint.unknownAtRules": "ignore"
+    "scss.lint.unknownAtRules": "ignore"
 }
