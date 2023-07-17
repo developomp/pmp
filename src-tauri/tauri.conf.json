@@ -1,0 +1,47 @@
+{
+    "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+
+    "build": {
+        "beforeDevCommand": "pnpm dev",
+        "beforeBuildCommand": "pnpm build",
+        "devPath": "http://localhost:1420",
+        "distDir": "../dist",
+        "withGlobalTauri": false
+    },
+    "package": {
+        "productName": "pmp",
+        "version": "0.0.0"
+    },
+    "tauri": {
+        "bundle": {
+            "active": true,
+            "targets": "all",
+            "category": "Music",
+            "identifier": "com.developomp.pmp",
+            "icon": [
+                "icons/32x32.png",
+                "icons/128x128.png",
+                "icons/128x128@2x.png",
+                "icons/icon.icns",
+                "icons/icon.ico"
+            ]
+        },
+        "security": {
+            "csp": null
+        },
+        "windows": [
+            {
+                "fullscreen": false,
+                "resizable": true,
+                "title": "pmp",
+                "width": 1300,
+                "height": 800
+            }
+        ]
+    },
+    "plugins": {
+        "shell": {
+            "open": true
+        }
+    }
+}

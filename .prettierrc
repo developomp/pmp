@@ -1,0 +1,15 @@
+{
+    "arrowParens": "avoid",
+    "semi": false,
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "*.md",
+            "options": { "tabWidth": 2 }
+        },
+        {
+            "files": "*.yml",
+            "options": { "tabWidth": 2 }
+        }
+    ]
+}

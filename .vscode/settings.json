@@ -1,0 +1,19 @@
+{
+    "cSpell.words": [
+        "appindicator",
+        "cssnano",
+        "developomp",
+        "dtolnay",
+        "libayatana",
+        "libgtk",
+        "librsvg",
+        "libwebkit",
+        "patchelf",
+        "pompy",
+        "tailwindcss",
+        "tauri"
+    ],
+
+    // prevent @tailwind directive from showing errors
+    "css.lint.unknownAtRules": "ignore"
+}
