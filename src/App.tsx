@@ -2,6 +2,7 @@ import { Route, Routes } from "@solidjs/router"
 import { type Component } from "solid-js"
 
 import Nav from "@/components/Nav"
+import Download from "@/pages/Download"
 import Home from "@/pages/Home"
 import Playing from "@/pages/Playing"
 import Settings from "@/pages/Settings"
@@ -13,6 +14,7 @@ const App: Component = () => {
                 <Routes>
                     <Route path="/" component={Home} />
                     <Route path="/playing" component={Playing} />
+                    <Route path="/download" component={Download} />
                     <Route path="/settings" component={Settings} />
                 </Routes>
             </div>

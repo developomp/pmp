@@ -2,6 +2,7 @@ import "./style.scss"
 
 import { A } from "@solidjs/router"
 import { AiFillHome } from "solid-icons/ai"
+import { BsCloudDownloadFill } from "solid-icons/bs"
 import { FaSolidMusic } from "solid-icons/fa"
 import { IoSettingsSharp } from "solid-icons/io"
 import { Component } from "solid-js"
@@ -14,6 +15,9 @@ const Nav: Component = () => {
             </A>
             <A href="/playing">
                 <FaSolidMusic />
+            </A>
+            <A href="/download">
+                <BsCloudDownloadFill />
             </A>
             <A href="/settings">
                 <IoSettingsSharp />
