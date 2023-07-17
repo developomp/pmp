@@ -13,6 +13,7 @@
         "libwebkit",
         "patchelf",
         "pompy",
+        "Swatinem",
         "tailwindcss",
         "tauri"
     ],
