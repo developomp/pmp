@@ -1,19 +1,16 @@
-import { invoke } from "@tauri-apps/api"
 import { Component, createResource, Suspense } from "solid-js"
 
-async function greet(name: string): Promise<string> {
-    return await invoke("greet", { name })
-}
+import { getMusicDir } from "@/data"
 
 const Settings: Component = () => {
-    const [name] = createResource("pomp", greet)
+    const [musicDir] = createResource(getMusicDir)
 
     return (
         <>
             <h1>Settings</h1>
 
             <Suspense fallback={<p>Loading...</p>}>
-                <p>{name()}</p>
+                <p>{musicDir()}</p>
             </Suspense>
         </>
     )

@@ -5,7 +5,7 @@ pub fn run() {
     tauri::Builder::default()
         .plugin(tauri_plugin_window::init())
         .plugin(tauri_plugin_shell::init())
-        .invoke_handler(tauri::generate_handler![commands::misc::greet])
+        .invoke_handler(tauri::generate_handler![commands::music::get_music_dir,])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
