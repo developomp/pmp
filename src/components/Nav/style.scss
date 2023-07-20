@@ -1,5 +1,11 @@
 nav {
+    a:hover {
+        svg {
+            @apply fill-zinc-100;
+        }
+    }
+
     svg {
-        @apply fill-zinc-400 text-4xl hover:fill-zinc-100;
+        @apply fill-zinc-400 text-4xl;
     }
 }
