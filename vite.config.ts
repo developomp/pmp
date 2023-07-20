@@ -1,7 +1,7 @@
-import { defineConfig } from "vite"
-import solidPlugin from "vite-plugin-solid"
 import { internalIpV4 } from "internal-ip"
 import path from "path"
+import { defineConfig } from "vite"
+import solidPlugin from "vite-plugin-solid"
 
 const mobile =
     process.env.TAURI_PLATFORM === "android" ||
