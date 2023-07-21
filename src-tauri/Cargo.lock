@@ -1967,6 +1967,7 @@ dependencies = [
  "tauri-build",
  "tauri-plugin-shell",
  "tauri-plugin-window",
+ "walkdir",
 ]
 
 [[package]]

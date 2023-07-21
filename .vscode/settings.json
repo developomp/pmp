@@ -16,7 +16,8 @@
         "solidjs",
         "Swatinem",
         "tailwindcss",
-        "tauri"
+        "tauri",
+        "walkdir"
     ],
 
     // prevent @tailwind directive from showing errors

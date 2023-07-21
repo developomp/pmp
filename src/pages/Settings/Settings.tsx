@@ -1,16 +1,15 @@
+import { audioDir } from "@tauri-apps/api/path"
 import { Component, createResource, Suspense } from "solid-js"
 
-import { getMusicDir } from "@/data"
-
 const Settings: Component = () => {
-    const [musicDir] = createResource(getMusicDir)
+    const [audioDirPath] = createResource(audioDir)
 
     return (
         <>
             <h1>Settings</h1>
 
             <Suspense fallback={<p>Loading...</p>}>
-                <p>{musicDir()}</p>
+                <p>{audioDirPath()}</p>
             </Suspense>
         </>
     )

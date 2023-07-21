@@ -1,17 +1,14 @@
 import { invoke } from "@tauri-apps/api"
 
-import tauriCommands from "@/tauriCommands"
-
-interface Data {
-    musicDir: string | undefined
+enum Command {
+    listMusic = "list_music",
 }
-const data: Data = {
-    musicDir: undefined,
+
+export interface Music {
+    name: string
+    path: string
 }
-export default data
 
-export async function getMusicDir(): Promise<string | undefined> {
-    if (data.musicDir !== undefined) return data.musicDir
-
-    return (data.musicDir = await invoke(tauriCommands.getMusicDir))
+export async function listMusic(): Promise<Music[]> {
+    return await invoke<Music[]>(Command.listMusic)
 }
